@@ -1,20 +1,24 @@
 // material-ui
-import { Typography } from '@mui/material';
+import { PlusOutlined } from '@ant-design/icons';
+import { Box, Button, Typography } from '@mui/material';
 
 // project import
-import MainCard from 'components/MainCard';
 
 // ==============================|| SAMPLE PAGE ||============================== //
 
 const SamplePage = () => (
-  <MainCard title="Sample Card">
-    <Typography variant="body2">
-      Lorem ipsum dolor sit amen, consenter nipissing eli, sed do elusion tempos incident ut laborers et doolie magna alissa. Ut enif ad
-      minim venice, quin nostrum exercitation illampu laborings nisi ut liquid ex ea commons construal. Duos aube grue dolor in reprehended
-      in voltage veil esse colum doolie eu fujian bulla parian. Exceptive sin ocean cuspidate non president, sunk in culpa qui officiate
-      descent molls anim id est labours.
-    </Typography>
-  </MainCard>
+  <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+    <div>
+      <Typography variant="h1">Welcome, Stebin</Typography>
+      <Typography variant="body2" sx={{ mt: '10px' }}>
+        Monday 10, October, 2023
+      </Typography>
+    </div>
+
+    <Button startIcon={<PlusOutlined />} variant="contained" sx={{ py: '9px' }}>
+      Create New Task / Project
+    </Button>
+  </Box>
 );
 
 export default SamplePage;
