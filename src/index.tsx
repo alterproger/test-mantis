@@ -1,7 +1,6 @@
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 
-// third-party
 import { Provider as ReduxProvider } from 'react-redux';
 
 // scroll bar
